@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "../"
+  source = "github.com/imranfawan/terraform-vpc?ref=v1.0"
   vpc_name = "demo"
   aws_region = "eu-west-1"
   aws_zone_1a = "eu-west-1a"

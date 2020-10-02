@@ -13,7 +13,8 @@ Execute `terraform apply` from the `example` folder.
 ```{r, engine='bash', count_lines}
 
 module "vpc" {
-  source = "../"
+  #source = "../"
+  source = "github.com/imranfawan/terraform-vpc?ref=v1.0"
   vpc_name = "demo"
   aws_region = "eu-west-1"
   aws_zone_1a = "eu-west-1a"
@@ -22,3 +23,6 @@ module "vpc" {
 }
 
 ```
+
+You may run the module locally by cloning the module and simply assigning the `source` to `..\`.
+
