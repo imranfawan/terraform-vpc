@@ -24,5 +24,5 @@ module "vpc" {
 
 ```
 
-You may run the module locally by cloning the module and simply assigning the `source` to `..\`.
+You may run the module locally by cloning the module and simply assigning the `source` to `../`.
 
